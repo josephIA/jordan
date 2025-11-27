@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Diamond Card</title>
+  <style>
+    body {
+      background: #1c1c1c;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-position: bottom;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+        body, html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+       button{
+      background-color: gold;
+      color: black;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    button:hover{
+      background-color: black;
+      color: white;
+    }
+    ul, h1, h3 {
+      color: gold;
+    }
+        .logo {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 150px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo"><img src="goldb.png" alt=""></div>
+  <h1>Gold Fan Card Application - $500</h1>
+  <form>
+    <h2>Gold Card Membership</h2>
+    <p>Join the Gold tier for enhanced fan perks — premium access without the elite price.</p>
+
+    <h3>Benefits Include:</h3>
+    <ul>
+      <li>Priority access to ticket sales and pre-sales</li>
+      <li>20% discount on merchandise and selected events</li>
+      <li>Monthly exclusive digital content and early releases</li>
+      <li>Priority customer support during business hours</li>
+      <li>Invitations to Gold member meet-and-greets and virtual Q&As</li>
+      <li>Collectible Gold Card with member authentication</li>
+    </ul>
+
+    <h3>How to Get Your Gold Card:</h3>
+    <p>To apply, click the button below to email our management team. They'll guide you through the quick application and payment options.</p>
+
+    <button type="button" onclick="sendEmail()">Apply for Gold Card</button>
+<p> <small>Each card supports our music journey and help bring our fans closer to  us through a premium, immersive fan experience.</small></p>
+
+    <script>
+      function sendEmail() {
+        window.location.href = "mailto:jordandanielcardmgt@gmail.com?subject=Gold Card Application&body=Hi,%0D%0AI'd like to apply for the Gold Membership Card. Please send payment options.%0D%0AHere are my details%0D%0AName:%20%0D%0APhone:%20%0D%0AAddress:%20%0D%0AEmail:%20%0D%0AThanks.";
+      }
+    </script>
+  </form>
+
+</body>
+</html>

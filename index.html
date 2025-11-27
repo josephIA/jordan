@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <title>the Rascal Flatts Fans Cards</title>
+  <style>
+    /* Video Background Styles */
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    /* Optional overlay for darkening video */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom right, #1a1a1a, #333);
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    body, html {
+      overflow-x: hidden;
+    }
+    header {
+      align-items: center;
+   
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 150px;
+    }
+    .nav {
+      margin-right: 0.5rem;
+    }
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .top-image-container {
+      overflow: hidden;
+      max-width: 500px;
+      margin: 1rem auto;
+      border-radius: 10px;
+    }
+    .top-image-container img {
+      width: 100%;
+      transition: transform 0.5s ease;
+      border-radius: 10px;
+    }
+    .top-image-container img:hover {
+      transform: scale(1.05);
+    }
+    h1 {
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+    }
+    .card h2 {
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+    }
+    .card p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .footer {
+      padding: 2rem;
+      background: #000;
+      color: #999;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 0.5rem;
+      }
+      .top-image-container {
+        max-width: 100%;
+        margin: 0.5rem;
+      }
+      .cards-container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+      section[style] {
+        padding: 1rem !important;
+      }
+      section[style] > div {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+    }
+    th, td {
+      padding: 0.5rem;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎥 Video Background -->
+  <!-- <video autoplay muted loop playsinline class="bg-video">
+    <source src="1920231498.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> -->
+
+  <header>
+    <table>
+      <th><div class="logo">
+        <a href="index.html"><img src="Remove background project (2).png" alt="the Rascal Flatts Logo"></a>
+      </div></th>
+    </table>
+  </header>
+
+  <!-- <div class="top-image-container">
+    <img src="Remove background project.png" alt="Fan Club Banner" />
+  </div> -->
+  <h1>Fan Membership Cards</h1>
+  <p>Select your tier and join the exclusive fan experience!</p>
+
+  <div class="cards-container">
+    <a href="purchasesilver.html">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="silver.png" alt="Silver Card">
+        <h2>Silver Card</h2>
+        <p>$250</p>
+      </div>
+    </a>
+
+    <a href="purchasegold.html">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="gold.png" alt="Gold Card">
+        <h2>Gold Card</h2>
+        <p>$500</p>
+      </div>
+    </a>
+
+    <a href="purchasediamond.html">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
+        <img src="diamond.png" alt="Diamond Card">
+        <h2>Diamond Card</h2>
+        <p>$1000</p>
+      </div>
+    </a>
+  </div>
+
+  <section style="padding: 2rem; background: #2222229f;">
+    <h2 style="color: gold;">Fan Testimonials</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+      <div style="background-image: url(FB_IMG_1753877562092.jpg); background-position: top; padding: 1rem; border-radius: 10px; max-width: 300px;" data-aos="fade-right">
+        <p>“Joining the Diamond Club was the best decision ever. I got to meet Jordan Daniel physically”</p>
+        <strong>– Jessica, NY</strong>
+      </div>
+      <div style="background-image: url(FB_IMG_1753877562092.jpg); background-position: top; padding: 1rem; border-radius: 10px; max-width: 300px;" data-aos="fade-left">
+        <p>“I love the Gold perks and early ticket access. Totally worth it!”</p>
+        <strong>– Marcus, TX</strong>
+      </div>
+      <div style="background-image: url(FB_IMG_1753877562092.jpg); background-position: top; padding: 1rem; border-radius: 10px; max-width: 300px;" data-aos="fade-up">
+        <p>“The Silver card gave me early access to merch drops and a welcome package I loved. I'm definitely upgrading soon!”</p>
+        <strong>– Emily, CA</strong>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>&copy; 2025 Jordan Daniel Fan Club. All Rights Reserved.</p>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => AOS.init());
+  </script>
+</body>
+</html>

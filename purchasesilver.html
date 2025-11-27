@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Silver Card</title>
+  <style>
+    body {
+      background: #1c1c1c;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+    }
+        .logo {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 150px;
+    }
+    form {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+  
+      h1 {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+      }
+        body, html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+    button{
+      background-color: silver;
+      color: black;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    button:hover{
+      background-color: black;
+      color: white;
+    }
+
+    ul, h1, h3 {
+      color: silver;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="logo"><img src="silverb.png" alt=""></div>
+  <h1>Silver Fan Card Application - $250</h1>
+  <form>
+    <h2>Silver Card Membership</h2>
+    <p>Join our exclusive Silver Card community and unlock premium benefits!</p>
+    
+    <h3>Benefits Include:</h3>
+    <ul>
+      <li>Early access to new releases and merchandise</li>
+      <li>Exclusive discounts on concert tickets (15% off)</li>
+      <li>Monthly member-only digital content</li>
+      <li>Priority customer support</li>
+      <li>Invitation to private fan events</li>
+      <li>Limited edition Silver Card collectible</li>
+    </ul>
+    
+    <h3>How to Get Your Silver Card:</h3>
+    <p>Ready to join? Click the button below to reach out to our management team. They'll guide you through the application process and answer any questions you may have.</p>
+    
+
+    
+     <button type="submit" onclick="sendEmail()">Apply for Silver Card</button>
+    <p> <small>Each card supports our music journey and help bring our fans closer to  us through a premium, immersive fan experience.</small></p>
+   
+
+    
+    <script>
+      function sendEmail() {
+        window.location.href = "mailto:jordandanielcardmgt@gmail.com?subject=Silver Card Application&body=Hi,%0D%0AI would like to apply for the Silver Card. Please send payment options.%0D%0AHere are my details%0D%0AName:%20%0D%0APhone:%20%0D%0AAddress:%20%0D%0AEmail:%20%0D%0AThanks.";
+      }
+    </script>
+  </form>
+</body>
+</html>

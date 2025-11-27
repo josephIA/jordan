@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Diamond Card</title>
+  <style>
+    body {
+      background: #1c1c1c;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+    }
+        .logo {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    .logo img {
+      max-height: 150px;
+    }
+    form {
+      max-width: 700px;
+      margin: 2rem auto;
+      background-position: bottom;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+   
+        body, html {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+       button{
+      background-color: #1c1c1c;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      font-weight: bolder;
+      text-transform: uppercase;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    button:hover{
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+    <div class="logo"><img src="diamondb.png" alt=""></div>
+  <h1>Diamond Fan Card Application - $1000</h1>
+  <form>
+    <h2>Diamond Card Membership</h2>
+    <p>Experience the ultimate fan experience with our exclusive Diamond Card membership!</p>
+    
+    <h3>Benefits Include:</h3>
+    <ul>
+      <li>VIP access to all exclusive events and meet-and-greets</li>
+      <li>Lifetime 40% discount on all merchandise and tickets</li>
+      <li>Monthly exclusive content and behind-the-scenes footage</li>
+      <li>Priority 24/7 concierge customer support</li>
+      <li>Invitation to private Diamond member-only parties</li>
+      <li>Limited edition Diamond Card collectible with authentication</li>
+      <li>Free shipping on all orders</li>
+      <li>Exclusive Diamond member merchandise</li>
+    </ul>
+    
+    <h3>How to Get Your Diamond Card:</h3>
+    <p>Ready to join our elite Diamond community? Click the button below to reach out to our management team. They'll guide you through the premium application process and answer any questions you may have.</p>
+    
+
+     <button type="submit" onclick="sendEmail()">Apply for Diamond Card</button>
+    <p> <small>Each card supports our music journey and help bring our fans closer to  us through a premium, immersive fan experience.</small></p>
+ 
+    <script>
+      function sendEmail() {
+        window.location.href = "mailto:jordandanielcardmgt@gmail.com?subject=Diamond Card Application&body=Hi,%0D%0AI would like to apply for the Diamond Card. Please send payment options.%0D%0AHere are my details%0D%0AName:%20%0D%0APhone:%20%0D%0AAddress:%20%0D%0AEmail:%20%0D%0AThanks.";
+      }
+    </script>
+  </form>
+
+</body>
+</html>
